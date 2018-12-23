@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PostActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:textColorLink="@color/titulo"
+        android:shadowColor="@color/titulo"
+        android:layout_marginBottom="5dp"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/content" />
+
+    <include
+        layout="@layout/bt_voltar"
+        />
+
+</LinearLayout>
